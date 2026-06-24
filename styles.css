@@ -1,0 +1,700 @@
+/* =======================================
+RESET
+======================================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Inter',sans-serif;
+
+background:#f8f5f0;
+
+color:#24313d;
+
+line-height:1.8;
+
+overflow-x:hidden;
+
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+/* =======================================
+COLORS
+======================================= */
+
+:root{
+
+--navy:#1f2d3a;
+
+--gold:#c7a15d;
+
+--gold-light:#d7b77a;
+
+--light:#f8f5f0;
+
+--white:#ffffff;
+
+--text:#24313d;
+
+--soft:#68727c;
+
+--shadow:
+0 15px 35px rgba(0,0,0,.08);
+
+}
+
+/* =======================================
+CONTAINER
+======================================= */
+
+.container{
+
+width:min(1200px,92%);
+margin:auto;
+
+}
+
+/* =======================================
+HEADER
+======================================= */
+
+header{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+
+background:
+rgba(255,255,255,.95);
+
+backdrop-filter:blur(10px);
+
+box-shadow:
+0 2px 15px rgba(0,0,0,.05);
+
+z-index:999;
+
+}
+
+.navbar{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px 0;
+
+}
+
+.logo{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:2rem;
+
+font-weight:700;
+
+text-decoration:none;
+
+color:var(--navy);
+
+}
+
+.nav-links{
+
+display:flex;
+
+gap:30px;
+
+list-style:none;
+
+}
+
+.nav-links a{
+
+text-decoration:none;
+
+color:var(--navy);
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+color:var(--gold);
+
+}
+
+.menu-toggle{
+
+display:none;
+
+font-size:2rem;
+
+cursor:pointer;
+
+}
+
+/* =======================================
+HERO
+======================================= */
+
+.hero{
+
+position:relative;
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+background:
+linear-gradient(
+rgba(10,20,30,.55),
+rgba(10,20,30,.55)
+),
+url('images/banner.jpg');
+
+background-size:cover;
+
+background-position:center;
+
+color:white;
+
+}
+
+.hero-content{
+
+position:relative;
+
+z-index:2;
+
+max-width:800px;
+
+}
+
+.eyebrow{
+
+letter-spacing:4px;
+
+font-size:.9rem;
+
+color:var(--gold-light);
+
+margin-bottom:15px;
+
+}
+
+.hero h1{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:clamp(3.5rem,7vw,6rem);
+
+line-height:1.1;
+
+margin-bottom:15px;
+
+}
+
+.hero h2{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:clamp(1.5rem,3vw,2.5rem);
+
+font-weight:500;
+
+margin-bottom:25px;
+
+color:var(--gold-light);
+
+}
+
+.hero-text{
+
+font-size:1.15rem;
+
+max-width:650px;
+
+margin-bottom:35px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+/* =======================================
+BUTTONS
+======================================= */
+
+.btn{
+
+display:inline-block;
+
+padding:14px 30px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn-primary{
+
+background:var(--gold);
+
+color:white;
+
+}
+
+.btn-primary:hover{
+
+transform:translateY(-3px);
+
+}
+
+.btn-secondary{
+
+border:2px solid white;
+
+color:white;
+
+}
+
+.btn-secondary:hover{
+
+background:white;
+
+color:var(--navy);
+
+}
+
+/* =======================================
+SECTIONS
+======================================= */
+
+section{
+
+padding:100px 0;
+
+}
+
+.alt{
+
+background:white;
+
+}
+
+.section-header{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+.section-header h2{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:3rem;
+
+color:var(--navy);
+
+}
+
+.gold-line{
+
+width:90px;
+
+height:4px;
+
+background:var(--gold);
+
+margin:15px auto;
+
+border-radius:20px;
+
+}
+
+/* =======================================
+BOOK SECTION
+======================================= */
+
+.book-grid{
+
+display:grid;
+
+grid-template-columns:
+2fr 1fr;
+
+gap:50px;
+
+align-items:start;
+
+}
+
+.book-grid h3{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:2rem;
+
+margin-bottom:20px;
+
+}
+
+.book-card{
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:var(--shadow);
+
+border-top:5px solid var(--gold);
+
+}
+
+.book-card h4{
+
+margin-bottom:20px;
+
+font-size:1.3rem;
+
+}
+
+.book-card ul{
+
+padding-left:20px;
+
+}
+
+.book-card li{
+
+margin-bottom:12px;
+
+}
+
+/* =======================================
+AUTHOR
+======================================= */
+
+.author-grid{
+
+display:grid;
+
+grid-template-columns:
+350px 1fr;
+
+gap:50px;
+
+align-items:center;
+
+}
+
+.author-image img{
+
+border-radius:20px;
+
+box-shadow:var(--shadow);
+
+}
+
+/* =======================================
+DEVOTIONS
+======================================= */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+box-shadow:var(--shadow);
+
+transition:.3s;
+
+border-top:5px solid var(--gold);
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card h3{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:1.8rem;
+
+margin-bottom:15px;
+
+}
+
+/* =======================================
+CONTACT
+======================================= */
+
+.contact{
+
+background:
+linear-gradient(
+135deg,
+var(--navy),
+#314354
+);
+
+text-align:center;
+
+color:white;
+
+}
+
+.contact .section-header h2{
+
+color:white;
+
+}
+
+.contact-text{
+
+max-width:700px;
+
+margin:auto auto 30px;
+
+}
+
+/* =======================================
+FOOTER
+======================================= */
+
+footer{
+
+background:#15202a;
+
+color:white;
+
+text-align:center;
+
+padding:60px 0;
+
+}
+
+footer h3{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:2rem;
+
+margin-bottom:10px;
+
+}
+
+footer p{
+
+opacity:.8;
+
+}
+
+/* =======================================
+TABLETS
+======================================= */
+
+@media(max-width:992px){
+
+.book-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.author-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.cards{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero-content{
+
+max-width:100%;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+}
+
+/* =======================================
+MOBILE
+======================================= */
+
+@media(max-width:768px){
+
+.navbar{
+
+flex-wrap:wrap;
+
+}
+
+.nav-links{
+
+width:100%;
+
+justify-content:center;
+
+margin-top:20px;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.hero h1{
+
+font-size:3rem;
+
+}
+
+.hero h2{
+
+font-size:1.5rem;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+}
+
+.section-header h2{
+
+font-size:2.2rem;
+
+}
+
+section{
+
+padding:80px 0;
+
+}
+
+}
+
+/* =======================================
+SMALL PHONES
+======================================= */
+
+@media(max-width:480px){
+
+.logo{
+
+font-size:1.5rem;
+
+}
+
+.hero{
+
+padding-top:100px;
+
+}
+
+.hero h1{
+
+font-size:2.4rem;
+
+}
+
+.hero-text{
+
+font-size:1rem;
+
+}
+
+.btn{
+
+width:100%;
+
+text-align:center;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+}
