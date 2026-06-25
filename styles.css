@@ -319,103 +319,20 @@ HERO
 ========================== */
 
 .hero{
-
-position:relative;
-
-height:90vh;
-
-min-height:700px;
-
-overflow:hidden;
-
+padding:0;
+margin:0;
+line-height:0;
+background:var(--background);
 }
-
 .hero-banner{
-
-position:absolute;
-
-inset:0;
-
+display:block;
 width:100%;
-
-height:100%;
-
+height:auto;
 object-fit:cover;
-
 }
 
-.hero-overlay{
-
-position:absolute;
-
-inset:0;
-
-background:linear-gradient(
-
-rgba(15,22,35,.65),
-
-rgba(15,22,35,.45)
-
-);
-
-display:flex;
-
-align-items:center;
-
-}
-
-.hero-content{
-
-max-width:700px;
-
-color:white;
-
-}
-
-.hero-content h1{
-
-color:white;
-
-}
-
-.hero-content h2{
-
-color:white;
-
-font-size:34px;
-
-font-weight:500;
-
-margin-bottom:26px;
-
-}
-
-.hero-text{
-
-font-size:20px;
-
-line-height:1.8;
-
-margin-bottom:40px;
-
-color:#f2f2f2;
-
-}
-
-.eyebrow{
-
-display:inline-block;
-
-letter-spacing:.25em;
-
-text-transform:uppercase;
-
-font-size:13px;
-
-color:#d9c79d;
-
-margin-bottom:18px;
-
+.hero{
+margin-bottom:90px;
 }
 
 /* ==========================
@@ -447,29 +364,20 @@ padding:120px 0;
 }
 
 .book-grid{
-
 display:grid;
-
-grid-template-columns:420px 1fr;
-
+grid-template-columns:380px 1fr;
 gap:80px;
-
 align-items:center;
-
 }
-
 .book-cover img{
-
-border-radius:16px;
-
-box-shadow:var(--shadow);
-
+width:100%;
+border-radius:18px;
+box-shadow:
+0 25px 55px rgba(0,0,0,.15);
 }
-
 .book-content{
-
 font-size:18px;
-
+line-height:1.9;
 }
 
 .book-actions{
@@ -477,6 +385,47 @@ font-size:18px;
 margin-top:36px;
 
 }
+
+.section-tag{
+display:inline-block;
+margin-bottom:18px;
+letter-spacing:.25em;
+text-transform:uppercase;
+font-size:13px;
+font-weight:600;
+color:var(--gold);
+}
+
+.quote-section{
+padding:120px 0;
+background:white;
+text-align:center;
+}
+.quote-section blockquote{
+max-width:760px;
+margin:auto;
+font-family:"Cormorant Garamond",serif;
+font-size:42px;
+line-height:1.5;
+color:var(--navy);
+font-style:italic;
+}
+
+.reading-section{
+padding:130px 0;
+text-align:center;
+background:
+linear-gradient(
+180deg,
+var(--background),
+white
+);
+}
+.reading-buttons{
+margin-top:40px;
+}
+
+
 
 /* ==========================
 DISCOVER
@@ -674,43 +623,84 @@ transform:translateY(-3px);
 /* ==========================================
 FOOTER
 ========================================== */
+/* ==========================================
+FOOTER
+========================================== */
 footer{
 background:#18222d;
 color:#d6d6d6;
-padding:80px 0 50px;
+padding:90px 0 50px;
+margin-top:120px;
+}
+.footer-content{
+max-width:900px;
+margin:auto;
 text-align:center;
 }
 footer h3{
+font-family:"Cormorant Garamond",serif;
+font-size:46px;
+font-weight:600;
 color:white;
-font-size:40px;
-margin-bottom:14px;
+margin-bottom:10px;
 }
-.footer-nav{
-display:flex;
-justify-content:center;
-gap:35px;
-flex-wrap:wrap;
-margin:40px 0;
-}
-.footer-nav a{
-color:#e7e7e7;
-font-size:15px;
-letter-spacing:.05em;
-text-transform:uppercase;
-}
-.footer-nav a:hover{
-color:var(--gold);
+.footer-tagline{
+font-size:18px;
+font-style:italic;
+opacity:.9;
+margin-bottom:25px;
 }
 .footer-divider{
 width:90px;
-height:2px;
+height:3px;
 background:var(--gold);
-margin:40px auto;
-opacity:.7;
+margin:35px auto 45px;
+border-radius:50px;
+}
+.footer-links{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:28px;
+margin-bottom:45px;
+}
+.footer-links a{
+color:#f2f2f2;
+font-size:14px;
+font-weight:500;
+letter-spacing:.08em;
+text-transform:uppercase;
+transition:.3s ease;
+}
+.footer-links a:hover{
+color:var(--gold);
 }
 footer p{
+font-size:15px;
+line-height:1.8;
+opacity:.8;
 margin-bottom:10px;
 }
+.copyright{
+margin-top:30px;
+padding-top:25px;
+border-top:1px solid rgba(255,255,255,.08);
+}
+
+.footer-scripture{
+
+margin-top:20px;
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:22px;
+
+font-style:italic;
+
+color:#d8c08a;
+
+}
+
 /* ==========================================
 GENERAL SECTION SPACING
 ========================================== */
