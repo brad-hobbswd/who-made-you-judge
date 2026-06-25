@@ -1134,3 +1134,51 @@ width:100%;
 text-align:center;
 }
 }
+
+/* ==========================================
+CHAPTER PROGRESS
+========================================== */
+.chapter-progress{
+max-width:320px;
+margin:35px auto 0;
+}
+.chapter-progress span{
+display:block;
+margin-bottom:12px;
+font-size:13px;
+font-weight:600;
+letter-spacing:.12em;
+text-transform:uppercase;
+color:#777;
+}
+.progress-bar{
+height:6px;
+background:#e6e1da;
+border-radius:999px;
+overflow:hidden;
+}
+.progress-fill{
+height:100%;
+background:var(--gold);
+border-radius:999px;
+}
+/* Progress for each chapter */
+.progress-fill.introduction{
+width:0%;
+}
+.progress-fill.chapter1{
+width:4%;
+}
+.progress-fill.chapter2{
+width:8%;
+}
+.progress-fill.chapter3{
+width:12%;
+}
+.progress-fill.chapter4{
+width:16%;
+}
+/* Continue increasing until Chapter 25 */
+.progress-fill.chapter25{
+width:100%;
+}
