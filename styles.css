@@ -648,9 +648,7 @@ box-shadow:var(--shadow);
 background:var(--gold);
 transform:translateY(-3px);
 }
-/* ==========================================
-FOOTER
-========================================== */
+
 /* ==========================================
 FOOTER
 ========================================== */
@@ -1108,13 +1106,19 @@ color:#777;
 text-align:center;
 }
 .chapter-navigation{
-display:flex;
-justify-content:space-between;
-align-items:center;
-gap:20px;
-margin-top:60px;
-flex-wrap:wrap;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:2rem;
+    flex-wrap:nowrap;
 }
+
+.chapter-navigation a{
+    flex:1;
+    max-width:320px;
+    text-align:center;
+}
+
 @media(max-width:768px){
 .manuscript{
 padding:70px 0;
@@ -1182,3 +1186,4 @@ width:16%;
 .progress-fill.chapter25{
 width:100%;
 }
+
