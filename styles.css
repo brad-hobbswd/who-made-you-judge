@@ -1260,3 +1260,64 @@ border-radius:8px;
 
 }
 
+/* ==========================================
+RESOURCE LINKS
+========================================== */
+
+.resource-list{
+
+list-style:none;
+
+padding:0;
+
+margin:35px 0;
+
+}
+
+.resource-list li{
+
+margin-bottom:18px;
+
+font-size:19px;
+
+line-height:1.8;
+
+}
+
+.resource-list a{
+
+color:var(--gold-dark);
+
+font-weight:600;
+
+text-decoration:none;
+
+transition:.3s ease;
+
+border-bottom:1px solid transparent;
+
+}
+
+.resource-list a:hover{
+
+color:var(--rose);
+
+border-bottom:1px solid var(--rose);
+
+}
+
+.resource-list a:visited{
+
+color:var(--gold-dark);
+
+}
+
+.resource-list a:focus{
+
+outline:2px solid var(--gold);
+
+outline-offset:4px;
+
+border-radius:4px;
+
+}
