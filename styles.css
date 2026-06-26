@@ -1152,10 +1152,12 @@ max-width:100%;
 /* ==========================================
 CHAPTER PROGRESS
 ========================================== */
+
 .chapter-progress{
 max-width:320px;
 margin:35px auto 0;
 }
+
 .chapter-progress span{
 display:block;
 margin-bottom:12px;
@@ -1165,37 +1167,51 @@ letter-spacing:.12em;
 text-transform:uppercase;
 color:#777;
 }
+
 .progress-bar{
 height:6px;
 background:#e6e1da;
 border-radius:999px;
 overflow:hidden;
 }
+
 .progress-fill{
 height:100%;
 background:var(--gold);
 border-radius:999px;
 }
-/* Progress for each chapter */
-.progress-fill.introduction{
-width:0%;
-}
-.progress-fill.chapter1{
-width:4%;
-}
-.progress-fill.chapter2{
-width:8%;
-}
-.progress-fill.chapter3{
-width:12%;
-}
-.progress-fill.chapter4{
-width:16%;
-}
-/* Continue increasing until Chapter 25 */
-.progress-fill.chapter25{
-width:100%;
-}
+
+/* ==========================================
+READING PROGRESS
+========================================== */
+
+.progress-fill.introduction{width:0%;}
+
+.progress-fill.chapter1{width:4%;}
+.progress-fill.chapter2{width:8%;}
+.progress-fill.chapter3{width:12%;}
+.progress-fill.chapter4{width:16%;}
+.progress-fill.chapter5{width:20%;}
+.progress-fill.chapter6{width:24%;}
+.progress-fill.chapter7{width:28%;}
+.progress-fill.chapter8{width:32%;}
+.progress-fill.chapter9{width:36%;}
+.progress-fill.chapter10{width:40%;}
+.progress-fill.chapter11{width:44%;}
+.progress-fill.chapter12{width:48%;}
+.progress-fill.chapter13{width:52%;}
+.progress-fill.chapter14{width:56%;}
+.progress-fill.chapter15{width:60%;}
+.progress-fill.chapter16{width:64%;}
+.progress-fill.chapter17{width:68%;}
+.progress-fill.chapter18{width:72%;}
+.progress-fill.chapter19{width:76%;}
+.progress-fill.chapter20{width:80%;}
+.progress-fill.chapter21{width:84%;}
+.progress-fill.chapter22{width:88%;}
+.progress-fill.chapter23{width:92%;}
+.progress-fill.chapter24{width:96%;}
+.progress-fill.chapter25{width:100%;}
 
 .resource-list{
 max-width:700px;
