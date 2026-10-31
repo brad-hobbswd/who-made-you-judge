@@ -1682,3 +1682,120 @@ transform:translateY(-2px);
     padding: 40px 0 24px;
   }
 }
+
+
+/* =====================================================
+   LANDSCAPE RESPONSIVE REFINEMENT
+   Prevent oversized hero and section spacing when a
+   phone or tablet is turned sideways.
+===================================================== */
+@media screen and (orientation: landscape) and (max-height: 900px) and (max-width: 1200px) {
+  .hero {
+    height: auto;
+    min-height: 0;
+    margin-bottom: 28px;
+  }
+
+  .hero-banner {
+    width: 100%;
+    height: auto;
+    max-height: 62vh;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .welcome-section,
+  .book-section,
+  .discover-section,
+  .author-section,
+  .resources-section,
+  .purpose-section,
+  .quote-section,
+  .reading-section,
+  .contents-section,
+  .contact-section {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+
+  .section-header {
+    margin-bottom: 32px;
+  }
+
+  .page-header,
+  .chapter-header {
+    padding-top: 42px;
+    padding-bottom: 32px;
+  }
+
+  .manuscript {
+    padding-top: 38px;
+    padding-bottom: 54px;
+  }
+
+  .manuscript h2 {
+    margin-top: 40px;
+    margin-bottom: 22px;
+  }
+
+  .manuscript hr {
+    margin-top: 38px;
+    margin-bottom: 38px;
+  }
+
+  footer {
+    margin-top: 0;
+    padding-top: 46px;
+    padding-bottom: 28px;
+  }
+}
+
+/* Short landscape phone screens need compact navigation
+   and content without forcing a tall hero. */
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  .navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  .nav-links {
+    gap: 8px 14px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: clamp(32px, 6vw, 48px);
+  }
+
+  h2 {
+    font-size: clamp(26px, 4.5vw, 36px);
+  }
+
+  .hero-banner {
+    max-height: 55vh;
+  }
+
+  .page-header,
+  .chapter-header {
+    padding-top: 28px;
+    padding-bottom: 22px;
+  }
+
+  .reading-note {
+    margin-bottom: 22px;
+    padding: 18px;
+  }
+
+  .manuscript {
+    padding-top: 24px;
+    padding-bottom: 34px;
+  }
+}
