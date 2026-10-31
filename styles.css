@@ -1407,3 +1407,278 @@ background:var(--gold-dark);
 transform:translateY(-2px);
 
 }
+
+
+/* =====================================================
+   MOBILE SPACING REFINEMENT
+   Keep desktop proportions while removing excessive
+   vertical whitespace on phones and small tablets.
+===================================================== */
+@media (max-width: 768px) {
+  .container {
+    width: min(90%, var(--max-width));
+  }
+
+  .navbar {
+    padding: 14px 0;
+    gap: 12px;
+  }
+
+  .nav-links {
+    gap: 10px 16px;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 0;
+    margin-bottom: 24px;
+  }
+
+  .section-intro {
+    width: 90%;
+    margin: 0 auto 34px;
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  .section-intro em {
+    font-size: 19px;
+  }
+
+  .section-header {
+    margin-bottom: 30px;
+  }
+
+  .book-section,
+  .discover-section,
+  .author-section,
+  .resources-section,
+  .contact-section,
+  .purpose-section,
+  .quote-section,
+  .reading-section,
+  .contents-section {
+    padding: 52px 0;
+  }
+
+  .book-grid,
+  .author-grid {
+    gap: 28px;
+  }
+
+  .book-content,
+  .author-content,
+  .purpose-section p {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  .theme-grid,
+  .resource-grid,
+  .contents-grid {
+    gap: 18px;
+  }
+
+  .theme-card,
+  .resource-card,
+  .chapter-card {
+    padding: 24px;
+  }
+
+  .theme-card h3,
+  .resource-card h3,
+  .chapter-card h3 {
+    margin-bottom: 10px;
+  }
+
+  .theme-card p,
+  .resource-card p,
+  .chapter-card p {
+    margin-bottom: 14px;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .quote-section blockquote {
+    font-size: 30px;
+    line-height: 1.35;
+  }
+
+  .reading-section p,
+  .contact-text {
+    font-size: 17px;
+    line-height: 1.75;
+    margin-bottom: 24px;
+  }
+
+  .reading-buttons,
+  .book-actions {
+    margin-top: 22px;
+  }
+
+  .primary-button,
+  .secondary-button {
+    padding: 13px 22px;
+  }
+
+  .page-header {
+    padding: 48px 0 32px;
+  }
+
+  .page-header h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+  }
+
+  .reading-note {
+    margin: 0 auto 32px;
+    padding: 20px;
+  }
+
+  .reading-note h2 {
+    font-size: 27px;
+  }
+
+  .reading-note p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .chapter-header {
+    padding: 48px 0 30px;
+  }
+
+  .chapter-header h1 {
+    font-size: 38px;
+  }
+
+  .chapter-header h2 {
+    font-size: 25px;
+    margin-bottom: 18px;
+  }
+
+  .reading-time {
+    margin-top: 18px;
+  }
+
+  .manuscript {
+    padding: 36px 0 52px;
+  }
+
+  .manuscript p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 17px;
+  }
+
+  .manuscript h2 {
+    font-size: 30px;
+    margin: 38px 0 22px;
+  }
+
+  .manuscript hr {
+    margin: 38px auto;
+  }
+
+  .center-quote {
+    font-size: 29px;
+    line-height: 1.35;
+    margin: 38px 0;
+  }
+
+  .chapter-ending {
+    margin: 48px 0 34px;
+  }
+
+  .chapter-navigation {
+    gap: 12px;
+    margin-top: 34px;
+  }
+
+  .chapter-navigation a {
+    padding: 13px 18px;
+  }
+
+  footer {
+    margin-top: 0;
+    padding: 48px 0 28px;
+  }
+
+  footer h3 {
+    font-size: 34px;
+  }
+
+  .footer-divider {
+    margin: 24px auto 28px;
+  }
+
+  .footer-links {
+    gap: 14px 18px;
+    margin-bottom: 30px;
+  }
+
+  .copyright {
+    padding-top: 20px;
+    margin-top: 14px;
+  }
+
+  p {
+    margin-bottom: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .nav-links {
+    gap: 8px 12px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 29px;
+  }
+
+  .section-tag {
+    font-size: 11px;
+    letter-spacing: .16em;
+    margin-bottom: 10px;
+  }
+
+  .theme-card,
+  .resource-card,
+  .chapter-card {
+    padding: 20px;
+  }
+
+  .manuscript {
+    padding: 28px 0 42px;
+  }
+
+  .manuscript p {
+    font-size: 15.5px;
+  }
+
+  .chapter-navigation {
+    flex-direction: column;
+  }
+
+  .chapter-navigation a {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  footer {
+    padding: 40px 0 24px;
+  }
+}
