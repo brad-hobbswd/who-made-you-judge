@@ -2830,3 +2830,235 @@ main:has(> .hero) + footer {
   .afterword-page .center-quote { font-size: 27px; }
   .afterword-page .closing-emphasis { font-size: 26px !important; }
 }
+
+/* =====================================================
+   CONSISTENT READING PAGE REFINEMENT
+   Applied to copyright, dedication, preface, introduction,
+   and chapters one through twenty-five.
+   Brings the reading experience into line with the
+   refined front matter and afterword layouts.
+===================================================== */
+.chapter-header {
+  padding: 58px 0 34px;
+}
+
+.chapter-header .container.narrow {
+  width: min(90%, 820px);
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.chapter-label {
+  margin-bottom: 13px;
+  padding: 7px 15px;
+  font-size: 11px;
+  letter-spacing: .11em;
+}
+
+.chapter-header h1 {
+  margin: 0 auto 10px;
+  font-size: clamp(40px, 5.5vw, 60px);
+  line-height: 1.08;
+}
+
+.chapter-header h2 {
+  margin: 8px auto 18px;
+  font-size: clamp(25px, 3.2vw, 32px);
+  line-height: 1.3;
+}
+
+.chapter-header .gold-line {
+  margin: 14px auto 0;
+}
+
+.reading-time {
+  margin-top: 16px;
+  font-size: 12px;
+  letter-spacing: .1em;
+  line-height: 1.6;
+}
+
+.chapter-progress {
+  margin: 24px auto 0;
+}
+
+.chapter-progress span {
+  margin-bottom: 9px;
+  font-size: 11px;
+}
+
+.manuscript {
+  width: min(90%, 760px);
+  max-width: 760px;
+  padding: 38px 0 58px;
+}
+
+.manuscript p {
+  max-width: 68ch;
+  margin: 0 auto 19px;
+  font-size: 17px;
+  line-height: 1.82;
+}
+
+.manuscript .drop-cap {
+  margin-bottom: 23px;
+}
+
+.manuscript h2 {
+  margin: 38px auto 18px;
+  line-height: 1.25;
+}
+
+.manuscript h3:not(.center-quote) {
+  margin: 30px auto 13px;
+  line-height: 1.3;
+}
+
+.manuscript hr {
+  width: min(100%, 620px);
+  margin: 34px auto;
+  border: 0;
+  border-top: 1px solid rgba(197, 162, 93, .35);
+}
+
+.center-quote {
+  max-width: 650px;
+  margin: 34px auto;
+  padding: 24px 20px;
+  border-top: 1px solid rgba(197, 162, 93, .38);
+  border-bottom: 1px solid rgba(197, 162, 93, .38);
+  font-size: clamp(30px, 4vw, 38px);
+  line-height: 1.3;
+}
+
+.chapter-ending {
+  margin: 42px 0 30px;
+}
+
+.chapter-navigation {
+  gap: 18px;
+  margin-top: 34px;
+}
+
+.chapter-navigation a {
+  min-width: 0;
+  margin: 0;
+}
+
+footer {
+  margin-top: 0;
+  padding: 54px 0 30px;
+}
+
+.footer-divider {
+  margin: 24px auto 30px;
+}
+
+.footer-links {
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .chapter-header {
+    padding: 40px 0 25px;
+  }
+
+  .chapter-header .container.narrow {
+    width: 92%;
+  }
+
+  .chapter-header h1 {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .chapter-header h2 {
+    font-size: 25px;
+    margin-bottom: 14px;
+  }
+
+  .chapter-label {
+    margin-bottom: 11px;
+  }
+
+  .reading-time {
+    margin-top: 13px;
+    font-size: 11px;
+  }
+
+  .chapter-progress {
+    margin-top: 20px;
+  }
+
+  .manuscript {
+    width: 90%;
+    padding: 28px 0 42px;
+  }
+
+  .manuscript p {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.78;
+  }
+
+  .manuscript h2 {
+    margin: 30px auto 15px;
+    font-size: 27px;
+  }
+
+  .manuscript h3:not(.center-quote) {
+    margin: 25px auto 11px;
+  }
+
+  .manuscript hr {
+    margin: 28px auto;
+  }
+
+  .center-quote {
+    margin: 27px auto;
+    padding: 20px 14px;
+    font-size: 30px;
+    line-height: 1.32;
+  }
+
+  .chapter-ending {
+    margin: 34px 0 24px;
+  }
+
+  .chapter-navigation {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    margin-top: 26px;
+  }
+
+  .chapter-navigation a {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  footer {
+    padding: 42px 0 25px;
+  }
+
+  .footer-links {
+    gap: 15px 20px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 420px) {
+  .chapter-header h1 {
+    font-size: 36px;
+  }
+
+  .manuscript {
+    width: 90%;
+  }
+
+  .center-quote {
+    font-size: 27px;
+  }
+}
+
