@@ -1799,3 +1799,43 @@ transform:translateY(-2px);
     padding-bottom: 34px;
   }
 }
+
+/* ==========================================
+   HERO BANNER SIZE AND PAGE MARGINS
+   Keep the banner comfortably inside the page
+   instead of stretching from edge to edge.
+========================================== */
+.hero {
+  width: min(92%, 1200px);
+  height: auto;
+  min-height: 0;
+  margin: 32px auto 70px;
+  padding: 0;
+  line-height: 0;
+}
+
+.hero-banner {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    width: 92%;
+    min-height: 0;
+    height: auto;
+    margin: 22px auto 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    width: 90%;
+    margin: 18px auto 26px;
+  }
+}
