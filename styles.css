@@ -2517,3 +2517,269 @@ main:has(> .hero) + footer {
     font-size: 20px;
   }
 }
+
+
+/* =====================================================
+   TABLE OF CONTENTS PAGE REFINEMENT
+   A calmer reading rhythm, balanced chapter cards,
+   and more intentional spacing across screen sizes.
+===================================================== */
+.contents-page main {
+  overflow: hidden;
+}
+
+.contents-page .page-header {
+  padding: 68px 0 42px;
+}
+
+.contents-page .page-header .narrow {
+  width: min(90%, 820px);
+}
+
+.contents-page .page-header h1 {
+  margin-bottom: 14px;
+  font-size: clamp(42px, 6vw, 62px);
+}
+
+.contents-page .page-header .gold-line {
+  margin-top: 14px;
+}
+
+.contents-page .page-header .section-intro {
+  max-width: 760px;
+  margin: 24px auto 0;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.contents-page .contents-section {
+  padding: 34px 0 76px;
+  background: #f5f2ed;
+}
+
+.contents-page .reading-note {
+  max-width: 780px;
+  margin: 0 auto 34px;
+  padding: 25px 32px;
+  border-left-width: 3px;
+  border-radius: 14px;
+  box-shadow: 0 7px 22px rgba(31, 44, 56, .055);
+}
+
+.contents-page .reading-note h2 {
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+
+.contents-page .reading-note p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.contents-page .contents-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 20px;
+}
+
+.contents-page .chapter-card {
+  min-width: 0;
+  padding: 26px 28px 24px;
+  border: 1px solid rgba(197, 162, 93, .15);
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(31, 44, 56, .055);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.contents-page .chapter-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(197, 162, 93, .42);
+  box-shadow: 0 13px 28px rgba(31, 44, 56, .09);
+}
+
+.contents-page .chapter-card a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100%;
+}
+
+.contents-page .chapter-number {
+  margin-bottom: 13px;
+  padding: 6px 12px;
+  font-size: 11px;
+  letter-spacing: .09em;
+}
+
+.contents-page .chapter-card h3 {
+  margin: 0 0 10px;
+  font-size: 27px;
+  line-height: 1.18;
+}
+
+.contents-page .chapter-card p {
+  flex: 1 0 auto;
+  margin: 0 0 18px;
+  font-size: 15px;
+  line-height: 1.68;
+}
+
+.contents-page .chapter-link {
+  margin-top: auto;
+  font-size: 14px;
+}
+
+.contents-page .reading-section {
+  padding: 68px 0 74px;
+  background: #fff;
+}
+
+.contents-page .reading-section h2 {
+  margin-bottom: 12px;
+  font-size: 40px;
+}
+
+.contents-page .reading-section .gold-line {
+  margin: 0 auto 22px;
+}
+
+.contents-page .reading-section p {
+  margin: 0 auto 26px;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.contents-page .reading-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 0;
+}
+
+.contents-page .reading-buttons a {
+  margin: 0;
+}
+
+.contents-page footer {
+  margin-top: 0;
+  padding: 54px 0 30px;
+}
+
+.contents-page .footer-divider {
+  margin: 24px auto 30px;
+}
+
+.contents-page .footer-links {
+  gap: 22px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .contents-page .page-header {
+    padding: 44px 0 28px;
+  }
+
+  .contents-page .page-header h1 {
+    font-size: 42px;
+  }
+
+  .contents-page .page-header .section-intro {
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 1.72;
+  }
+
+  .contents-page .contents-section {
+    padding: 24px 0 48px;
+  }
+
+  .contents-page .reading-note {
+    margin-bottom: 24px;
+    padding: 22px;
+  }
+
+  .contents-page .reading-note h2 {
+    font-size: 27px;
+  }
+
+  .contents-page .reading-note p {
+    font-size: 15px;
+  }
+
+  .contents-page .contents-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .contents-page .chapter-card {
+    padding: 22px;
+  }
+
+  .contents-page .chapter-card h3 {
+    font-size: 25px;
+  }
+
+  .contents-page .chapter-card p {
+    font-size: 15px;
+    line-height: 1.65;
+    margin-bottom: 14px;
+  }
+
+  .contents-page .reading-section {
+    padding: 48px 0 52px;
+  }
+
+  .contents-page .reading-section h2 {
+    font-size: 34px;
+  }
+
+  .contents-page .reading-section p {
+    font-size: 16px;
+    line-height: 1.72;
+  }
+
+  .contents-page .reading-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .contents-page .reading-buttons a {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contents-page footer {
+    padding: 42px 0 25px;
+  }
+
+  .contents-page .footer-links {
+    gap: 15px 20px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 420px) {
+  .contents-page .page-header h1 {
+    font-size: 37px;
+  }
+
+  .contents-page .reading-note {
+    padding: 19px;
+  }
+
+  .contents-page .chapter-card {
+    padding: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contents-page .chapter-card {
+    transition: none;
+  }
+
+  .contents-page .chapter-card:hover {
+    transform: none;
+  }
+}
