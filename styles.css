@@ -2830,3 +2830,32 @@ main:has(> .hero) + footer {
   .afterword-page .center-quote { font-size: 27px; }
   .afterword-page .closing-emphasis { font-size: 26px !important; }
 }
+
+
+/* Keep Afterword navigation buttons identical to the other
+   chapter pages, including their original sizing and treatment. */
+.afterword-page .chapter-navigation {
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.afterword-page .chapter-navigation a {
+  flex: 1;
+  max-width: 260px;
+  min-width: 0;
+  padding: initial;
+  font-size: inherit;
+}
+
+@media (max-width: 768px) {
+  .afterword-page .chapter-navigation {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .afterword-page .chapter-navigation a {
+    width: 100%;
+    max-width: 100%;
+    flex: none;
+  }
+}
