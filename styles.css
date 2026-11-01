@@ -1839,3 +1839,22 @@ transform:translateY(-2px);
     margin: 18px auto 26px;
   }
 }
+
+
+/* Banner frame: softly rounded corners with a subtle lift */
+.hero {
+  border-radius: 20px;
+  box-shadow: 0 18px 42px rgba(31, 44, 56, 0.16);
+  overflow: hidden;
+}
+
+.hero-banner {
+  border-radius: inherit;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    border-radius: 16px;
+    box-shadow: 0 12px 28px rgba(31, 44, 56, 0.14);
+  }
+}
