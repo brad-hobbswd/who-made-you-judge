@@ -2038,3 +2038,169 @@ main:has(> .hero) + footer {
     margin-top: 0;
   }
 }
+
+
+/* =====================================================
+   ABOUT PAGE SPACING REFINEMENT
+   Keep the author page focused, readable, and balanced.
+===================================================== */
+.about-page main {
+  overflow: hidden;
+}
+
+.about-page .chapter-header {
+  padding: 62px 0 38px;
+}
+
+.about-page .chapter-header .container {
+  padding: 0 20px;
+}
+
+.about-page .chapter-label {
+  margin-bottom: 14px;
+}
+
+.about-page .chapter-header h1 {
+  margin-bottom: 10px;
+}
+
+.about-page .reading-time {
+  margin-top: 18px;
+  line-height: 1.6;
+}
+
+.about-page .manuscript {
+  width: min(90%, 760px);
+  max-width: 760px;
+  padding: 48px 0 64px;
+}
+
+.about-page .manuscript p {
+  max-width: 68ch;
+  margin-bottom: 20px;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.about-page .manuscript .drop-cap {
+  margin-bottom: 28px;
+}
+
+.about-page .center-quote {
+  margin: 38px 0;
+  font-size: 38px;
+  line-height: 1.3;
+}
+
+.about-page .chapter-ending {
+  margin: 48px 0 32px;
+}
+
+.about-page .chapter-ending .gold-line {
+  margin-top: 0;
+}
+
+.about-page .chapter-navigation {
+  gap: 16px;
+  margin-top: 36px;
+}
+
+.about-page .chapter-navigation a {
+  margin-left: 0;
+  padding: 14px 22px;
+}
+
+.about-page + footer,
+.about-page footer {
+  margin-top: 0;
+}
+
+.about-page footer {
+  padding: 58px 0 34px;
+}
+
+.about-page .footer-divider {
+  margin: 26px auto 32px;
+}
+
+.about-page .footer-links {
+  margin-bottom: 34px;
+}
+
+@media (max-width: 768px) {
+  .about-page .chapter-header {
+    padding: 42px 0 26px;
+  }
+
+  .about-page .chapter-header h1 {
+    font-size: 38px;
+  }
+
+  .about-page .reading-time {
+    margin-top: 14px;
+    font-size: 13px;
+    letter-spacing: .04em;
+  }
+
+  .about-page .manuscript {
+    width: 90%;
+    padding: 30px 0 44px;
+  }
+
+  .about-page .manuscript p {
+    margin-bottom: 17px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .about-page .manuscript .drop-cap {
+    margin-bottom: 22px;
+  }
+
+  .about-page .center-quote {
+    margin: 30px 0;
+    font-size: 30px;
+    line-height: 1.35;
+  }
+
+  .about-page .chapter-ending {
+    margin: 36px 0 26px;
+  }
+
+  .about-page .chapter-navigation {
+    gap: 10px;
+    margin-top: 28px;
+  }
+
+  .about-page .chapter-navigation a {
+    padding: 13px 18px;
+  }
+
+  .about-page footer {
+    padding: 42px 0 26px;
+  }
+
+  .about-page .footer-divider {
+    margin: 22px auto 26px;
+  }
+
+  .about-page .footer-links {
+    margin-bottom: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page .chapter-header {
+    padding: 34px 0 22px;
+  }
+
+  .about-page .manuscript {
+    width: 90%;
+    padding: 26px 0 38px;
+  }
+
+  .about-page .center-quote {
+    font-size: 27px;
+    margin: 26px 0;
+  }
+}
