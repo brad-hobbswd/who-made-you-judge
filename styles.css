@@ -3062,3 +3062,12 @@ footer {
   }
 }
 
+
+/* WHO SERIES FOOTER CROSS-LINKS */
+.who-series-footer{margin:36px auto 42px;padding:28px 20px;border-top:1px solid rgba(199,154,51,.35);border-bottom:1px solid rgba(199,154,51,.35);text-align:center;}
+.who-series-label{margin:0 0 8px;font-size:.75rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold, #c79a33);}
+.who-series-intro{margin:0 0 18px;font-family:Georgia,serif;font-size:1.2rem;font-style:italic;opacity:.8;}
+.who-series-links{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:12px 26px;}
+.who-series-links a{font-size:.92rem;font-weight:600;text-decoration:none;transition:color .25s ease;}
+.who-series-links a:hover{color:var(--gold-light, #d8c08a);}
+@media(max-width:600px){.who-series-footer{margin:28px auto;padding:24px 12px}.who-series-links{flex-direction:column;gap:12px}}
